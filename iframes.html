@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrames in HTML</title>
+    <!-- <script>
+        function changeIframe(ID) {
+            var obj = document.getElementById(ID);
+            var frame = document.getElementById("iframe1");
+
+            frame.setAttribute('src', obj.getAttribute('href'));
+        }
+    </script> -->
+</head>
+<body>
+    <h1>iframes in HTML</h1>
+    <h2>Index Page embedded iframe</h2>
+    <div>
+        <!-- <a href="practice1.html" id="page1" onclick="changeIframe('page1')">Page 1</a>
+        <a href="practice2.html" id="page2" onclick="changeIframe('page2')" >Page 2</a>
+        <a href="table.html" id="page3" onclick="changeIframe('page3')">Page 3</a> -->
+
+        <a href="practice1.html" id="page1" target="myframe">Page 1</a>
+        <a href="practice2.html" id="page2" target="myframe" >Page 2</a>
+        <a href="table.html" id="page3" target="myframe">Page 3</a>
+    </div>
+    <iframe id="iframe1" name="myframe" src="first.html" width="50%" height="300px"></iframe>
+</body>
+</html>
