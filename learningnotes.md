@@ -14,3 +14,23 @@ Why do we have thead tbody tags?
 action: 
 method: method="get|post"
 encryption type: enctype="multipart/form-data"
+
+
+get => 
+2 mb se upr ka data nhi bhej skta
+apna data url mei merge krke bhejta hai (encrypt nhi hoti)
+
+post => 
+kitna bhi data bhej skta hai
+alag se data, packet ki form mei jaata hai (bydefault encrypted hota hai)
+
+url se differentiate mei get hee hota hai
+fetch func post info bhejta hai.
+
+light info that doesn't concern security we can use get there.
+
+incase of refresh data can reappear for get requests whereas it doesnt comes back when used with post request. [also doesnt give suggestion] 
+
+action => 
+jis bhi lang ko data bhejna hai usko data bhejta hai (url usss lang ka hoga)
+
