@@ -5,28 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        table {
+            background-color: bisque;
+        }
+        /*
+            Note: remember when you keep the css of table 
+            and tr together it will not work on the hovering.
+        */
+        tr:hover {
+            background-color: lightgreen;
+        }
         table, tr, th, td {
             border-collapse: collapse;
             border: 2px solid green;
-            background-color: bisque;
         }
     </style>
 </head>
 <body>
     <h1>Tables in HTML</h1>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Age</th>
-        </tr>
-    <thead>
-    <tbody>
-        <tr>
-            <td>Ravi Saini</td>
-            <td>Kanpur</td>
-            <td>34</td>
-        </tr>
-    </tbody>
+    <table cellpadding="12px">
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+                <th rowspan="2">Address</th>
+                <th rowspan="2">Age</th>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        <thead>
+        <tbody>
+            <tr>
+                <td>Riya</td>
+                <td>Kansal</td>
+                <td>Bhangarh</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>Deeksha</td>
+                <td>Sharma</td>
+                <td>Lucknow</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Yashi</td>
+                <td>Dwivedi</td>
+                <td>Kolkata</td>
+                <td>44</td>
+            </tr>
+            <tr>
+                <td>Mohit</td>
+                <td>Rounta</td>
+                <td>Ghaziabad</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Ravi</td>
+                <td>Saini</td>
+                <td>Kanpur</td>
+                <td>34</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
