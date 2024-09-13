@@ -10,7 +10,6 @@ Why do we have thead tbody tags?
 
     vite => new react framework. rendering is fast.
 
-
 action: 
 method: method="get|post"
 encryption type: enctype="multipart/form-data"
