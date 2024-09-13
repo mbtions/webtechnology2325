@@ -12,12 +12,19 @@
             Note: remember when you keep the css of table 
             and tr together it will not work on the hovering.
         */
-        tr:hover {
-            background-color: lightgreen;
+        thead:hover {
+            background-color: cornsilk;
+            /* color: white; */
+        }
+        tbody > tr:hover {
+            background-color: cornsilk;
         }
         table, tr, th, td {
             border-collapse: collapse;
             border: 2px solid green;
+        }
+        tbody > tr:nth-child(odd):hover{
+            background-color: rgb(232, 226, 200);
         }
     </style>
 </head>
