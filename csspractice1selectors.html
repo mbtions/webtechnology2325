@@ -15,6 +15,12 @@
         div.xyz + p {
             color: blue;
         }
+        div.abc ~ div {
+            border: 1px red solid;
+        }
+        /* div.abc ~ p {
+            border: 1px red solid;
+        } */
     </style>
 </head>
 <body>
@@ -29,7 +35,7 @@
         <p>Hello 3</p>
     </div>
     <div class="xyz">
-        Message
+        <p>Message</p> <!-- why does ~ on abc for p is applied on this element as well? -->
     </div>
     <!-- 
         <div>to the world</div> 

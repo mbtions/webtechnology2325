@@ -43,15 +43,65 @@ div.abc > p {
 
 }
 
-#### using comma:
+#### using comma: {grouping}
 div, section {
 
 }
 
-#### without using comma
+#### without using comma 
+=> will group all descendants whether immediate child or their descendants as well
 
+div.abc p {
 
-#### using > selector {descendants selector}
+}
 
+#### using > selector {only immediate descendants selector}
+div.abc > p {
+
+}
 
 #### using + selector {immediate sibling selector}
+div.abc + p {
+
+}
+
+#### using ~ selector {For all sibling}
+div.abc ~ p {
+
+}
+
+Q: why does the ~ is applied on siblings' descendants as well?
+Q: Will the immediate sibling be applied on the element that is not just immediate as per the hierarchy? For ex: div.abc has immediate child as another div but + is applied on the p tag then will it be applied or not?
+
+
+### Attributes Selectors
+    element [attribute = "value"] {
+
+    }
+Ex: 
+img [src="small.gif"] {
+    border: 1px solid bisque;
+}
+
+Q: What is CSS and types of CSS
+There are 3 types of CSS:
+1. Inline: 
+    In each and every tag, we have a style attribute, so we update this property.
+2. Internal: 
+    If we use style tag in the head or body
+3. External: 
+    When same css is written in an external file and link it with the html file using link tag.
+
+Q: When to use which CSS?
+=> NOTE: Always prefer external CSS, so that there will be a common styling for the page, 
+i.e., For common interface. 
+Also, if you are using common framework then also use it externally.
+Internal: when you want to overwrite it for the elements, then use it internally.
+Inline: When you want styling of a particular tag to be different then use inline
+
+  order of CSS:
+  - link
+  - internal
+  - inline
+
+ID attribute in HTML has no syntactical meaning, it is just semantic for the understanding of the programmer.
