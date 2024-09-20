@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div.abc p {
+            color: red;
+        }
+        div.abc > p {
+            color: purple;
+        }
+        /* For immediate sibling */
+        div.xyz + p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <div class="abc">
+        <p>Hello 1</p>
+        <p>Hello 2</p>
+        <div>
+            <p>Hello</p>
+            <p>World</p>
+        </div>
+        <p>Hello 3</p>
+    </div>
+    <div class="xyz">
+        Message
+    </div>
+    <!-- 
+        <div>to the world</div> 
+        If this code is uncommented then the immediate sibling css for p will not be applicable
+    --> 
+    <p>Hello CSS!</p>
+    <p>New CSS!</p>
+</body>
+</html>

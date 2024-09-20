@@ -33,3 +33,25 @@ incase of refresh data can reappear for get requests whereas it doesnt comes bac
 action => 
 jis bhi lang ko data bhejna hai usko data bhejta hai (url usss lang ka hoga)
 
+
+CSS
+
+div.abc p {
+
+}
+div.abc > p {
+
+}
+
+#### using comma:
+div, section {
+
+}
+
+#### without using comma
+
+
+#### using > selector {descendants selector}
+
+
+#### using + selector {immediate sibling selector}
