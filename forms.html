@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,26 @@
     <style>
         body {
             /* background-color: black; */
+            font-size: 1em;
             background-image: url("halfcircle.png");
             background-repeat: no-repeat;
             background-attachment: scroll;
-            
+            background-position-x: center;
+            background-size: contain;
+            height: 100vh;
             display: flex;
             justify-content: center;
-            margin-top: 50px;
-            /* color: white; */
         }
+
         .container {
+            box-shadow: 12px;
             width: 40%;
+            height: 80%;
             padding: 10px;
             border-radius: 5px;
             background-color: white;
         }
-        
+
         input {
             max-width: 100%;
             border: none;
@@ -30,22 +35,26 @@
             border-radius: 5px;
             padding: 10px;
         }
-        .firstname{
+
+        .firstname {
             display: flex;
             justify-content: space-between;
             color: rgb(226, 226, 244);
             color: rgba(176, 176, 239, 1);
         }
-        .lastname{
+
+        .lastname {
             display: flex;
             color: rgb(163, 163, 244);
             justify-content: space-between;
         }
+
         .ticket {
             margin: 10px;
             display: flex;
             justify-content: space-between;
         }
+
         #submitbutton {
             margin-top: 10px;
             padding: 10px;
@@ -56,15 +65,22 @@
             text-align: center;
             background-color: orangered;
         }
-       .emaildiv {
-        margin: 5px;
-        width: 100%;
-       }
-       .rightalign {
-        text-align: right;
-       }
+
+        .emaildiv {
+            margin: 5px;
+            width: 100%;
+        }
+
+        .rightalign {
+            text-align: right;
+        }
+
+        .rightalign>input {
+            width: 50px;
+        }
     </style>
 </head>
+
 <body>
     <!-- <h1>Forms Example</h1> -->
     <div class="container">
@@ -80,7 +96,7 @@
                     <label for="lname">Last Name</label>
                 </div>
             </div>
-            
+
             <div class="emaildiv">
                 <label for="email">Email Address*</label>
                 <br>
@@ -123,6 +139,7 @@
         </form>
     </div>
 </body>
+
 </html>
 <!-- <label for="child_ticket"  >Child Ticket</label>
 <label for="child_ticket"  >$8</label>

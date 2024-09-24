@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <style>
+        body {
+            background-image: url(halfcircle.png);
+            background-repeat: no-repeat;
+            background-position-x: 70%;
+            background-position-y: 7px;
+            background-size: contain;
+            margin: 0px;
+            background-color: rgba(176, 176, 239, 0.1);
+        }
+
+        .container {
+            top: 1vh;
+            height: 95vh;
+            padding: 10px;
+            width: 40%;
+            background-color: white;
+            border-radius: 5px;
+            position: relative;
+            left: 20%;
+            margin: 0px;
+        }
+
+        input {
+            max-width: 100%;
+            border: none;
+            background-color: rgba(176, 176, 239, 0.2);
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        .firstname {
+            display: flex;
+            justify-content: space-between;
+            color: rgb(226, 226, 244);
+            /* color: rgba(176, 176, 239, 0.1); */
+        }
+
+        .lastname {
+            display: flex;
+            color: rgb(163, 163, 244);
+            justify-content: space-between;
+        }
+
+        .ticket {
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #submitbutton {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            background-color: orangered;
+        }
+
+        .emaildiv {
+            margin: 5px;
+            width: 100%;
+        }
+
+        .rightalign {
+            text-align: right;
+        }
+
+        .rightalign>input {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="waves.png" alt="logo" id="logo" width="50px" height="50px">
+                <h1 style="text-align: center; margin-left: 10px;">ZEMR</h1>
+            </div>
+            <h3 style="text-align: center;">Ticket Order Form</h3>
+            <form>
+                <div class="fullname">
+                    <p>Name</p>
+                    <div class="firstname">
+                        <input type="text" name="fname">
+                        <input type="text" name="lname">
+                    </div>
+                    <div class="lastname">
+                        <label for="fname">First Name</label>
+                        <label for="lname">Last Name</label>
+                    </div>
+                </div>
+                <br>
+                <div class="emaildiv">
+                    <label for="email">Email Address*</label>
+                    <br>
+                    <input type="text" name="email">
+                </div>
+
+                <div class="ticket">
+                    <label for="adult_ticket">Adult Ticket</label>
+                    <div class=" rightalign">
+                        <label for="adult_ticket">$15</label>
+                        <br>
+                        <label for="adult_ticket">Quantity:</label>
+                        <br>
+                        <input type="number" id="adult_ticket">
+                    </div>
+                </div>
+
+                <div class="ticket">
+                    <label for="child_ticket">Child Ticket</label>
+                    <div class=" rightalign">
+                        <label for="child_ticket">$8</label>
+                        <br>
+                        <label for="child_ticket">Quantity:</label>
+                        <br>
+                        <input type="number" id="child_ticket">
+                    </div>
+                </div>
+
+                <div class="ticket">
+                    <label for="senior_ticket">Senior Ticket</label>
+                    <div class=" rightalign">
+                        <label for="senior_ticket">$15</label>
+                        <br>
+                        <label for="senior_ticket">Quantity:</label>
+                        <br>
+                        <input type="number" id="senior_ticket">
+                    </div>
+                </div>
+                <input id="submitbutton" type="submit" value="Continue to Payment"
+                    style="font-weight:bold; margin-top: 20px;">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
