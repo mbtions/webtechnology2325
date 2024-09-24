@@ -1,0 +1,7 @@
+Why BootStrap?
+Fast and responsive website
+
+What is Bootstrap?
+It is a plugin type service which can be used in any project.
+
+What is CDN?
