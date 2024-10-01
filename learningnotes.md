@@ -115,3 +115,13 @@ New Engine in RUST
 node.js npm package in RUST.
 
 Javascript is used as a plugin in browser.
+Object based programming language that we are currently learning. 
+new javascript is object oriented.
+
+we can access html elements by using =>
+getElementByID
+by Name
+by Tag name
+by classname
+get queryselector
+get queryselectorall
