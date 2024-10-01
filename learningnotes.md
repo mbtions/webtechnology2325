@@ -105,3 +105,13 @@ Inline: When you want styling of a particular tag to be different then use inlin
   - inline
 
 ID attribute in HTML has no syntactical meaning, it is just semantic for the understanding of the programmer.
+
+
+# JavaScript
+
+Chrome V8 Engine is used.
+New Engine in RUST
+
+node.js npm package in RUST.
+
+Javascript is used as a plugin in browser.

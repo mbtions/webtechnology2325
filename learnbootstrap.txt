@@ -3,5 +3,19 @@ Fast and responsive website
 
 What is Bootstrap?
 It is a plugin type service which can be used in any project.
+It is a CSS based library that have predefined set of classes that we use to build responsive and fast web pages.
+
+Grid System, in Bootstrap:
+In bootstrap, screen is divided into 12 parts, you can also assume that each part is a single column. It has a certain mechanism=> the screen is also divided as per the pixels :
+extra small
+small
+medium
+large
+extra large
+extra extra large
 
 What is CDN?
+
+
+
+you can use custom colors using scss in Bootstrap verson 5.3
