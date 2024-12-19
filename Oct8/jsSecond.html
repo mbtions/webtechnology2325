@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Second</title>
+</head>
+
+<body>
+    <p id="demo">Information</p>
+    <button type="button" id="show" onclick="showResult()">SHOW RESULT</button>
+    <script>
+        function showResult() {
+            // let num = 10;
+            // let num = 10.6;
+            // let num = "Kiet"
+            // let num = true
+            // let num = [1, 2, 4] // array is an object
+
+            // let num = function () { }
+            // num = 10; // value can be changed anywhere in the program
+
+            // var num = function () { }
+            // let num = 10;
+            // var num = "Kiet" // in case of var, you can declare same variable multiple times, which is not encouraged nowadays.
+
+            var num = 10;
+            value = 10 // variable without a var or let or const; it will be automatically global
+            const var1 = 23;
+            // document.getElementById("demo").innerHTML = typeof (num); // type of the variable num is updated to the text
+        }
+        showResult();
+        // document.getElementById("demo").innerHTML = value; // valid
+        document.getElementById("demo").innerHTML = var1; // error; since const are also local scope
+        // document.getElementById("demo").innerHTML = typeof (num); // num is undefined; error
+
+        // let vs var
+
+    </script>
+</body>
+
+</html>

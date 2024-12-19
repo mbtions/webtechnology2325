@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        // first way to create an object: object literal
+        // emp = {
+        //     id: 102,
+        //     name: "Shyam Kumar",
+        //     salary: 40000
+        // }
+        // document.write(emp.id + " " + emp.name + " " + emp.salary);
+
+
+        // second way to create an object: by creating an object using new
+        // var emp = new Object();
+        // emp.id = 101;
+        // emp.name = "Ravi Malik";
+        // emp.salary = 50000;
+        // document.write("<br>" + emp.id + " " + emp.name + " " + emp.salary);
+
+
+        // third way to create an object: by using function [Object constructor]
+        // function emp(id, name, salary) {
+        //     this.id = id;
+        //     this.name = name;
+        //     this.salary = salary;
+        // }
+
+        // e = new emp(103, "Vimal Jaiswal", 30000);
+        // document.write("<br>" + e.id + " " + e.name + " " + e.salary);
+
+
+        let array = [
+            {
+                id: 1,
+                name: "Manan"
+            },
+            {
+                id: 2,
+                name: "Manav"
+            },
+            {
+                id: 3,
+                name: "Udyan"
+            },
+            {
+                id: 4,
+                name: "Srikant"
+            },
+            {
+                id: 5,
+                name: "Manvi"
+            },
+        ]
+
+        // array.forEach(function (obj) {
+        //     document.getElementById("demo").innerHTML += `ID=${obj.id}<br>Name= ${obj.name}<br><br>`;
+        // })
+
+        // array.forEach(function (obj) {
+        //     document.getElementById("demo").innerHTML += `ID=${obj["id"]}<br>Name= ${obj["name"]}<br><br>`;
+        // })
+
+        // Destructuring
+        array.forEach(function ({ id, name }) {
+            document.getElementById("demo").innerHTML += `ID=${id}<br>Name= ${name}<br><br>`;
+        })
+    </script>
+</body>
+
+</html>

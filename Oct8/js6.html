@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JavaScript</title>
+</head>
+
+<body>
+
+    <!-- <p id="demo">Array value is: <span>_______</span></p> -->
+    <p id="demo"></p>
+    <button type="button" onclick="updateResult()">Get Array</button>
+    <script>
+        function updateResult() {
+            // var myCars = new Array(); // regular array
+            // myCars[0] = "Saab";
+            // myCars[1] = "Volvo";
+            // myCars[2] = "BMW";
+            // myCars[3] = [23, 45, ["JS", "TS"], 56]
+            // myCars[4] = function () { alert("hello") }
+
+            // var myCars = new Array("Saab", "Volvo", "BMW"); // condensed array
+
+            // var myCars = ["Saab", "Volvo", "BMW"]; // literal array
+
+            // document.querySelector("#demo span").innerHTML = myCars[3][2];
+            // document.querySelector("#demo span").innerHTML = myCars[4](); // arrow function that is anonymous
+
+            let arr = [2, 3, 45, 67, 899, "string"];
+            document.getElementById("demo").innerHTML = "";
+            // for (let i = 0; i < arr.length; i++) {
+            //     document.getElementById("demo").innerHTML += `index ${i}: ${arr[i]}<br>`;
+            // }
+
+            // forEach loop, introduced in ES6
+            // arr.forEach(function display(value, index) {
+            //     document.getElementById("demo").innerHTML += `index ${index}: ${value}<br>`;
+            // });
+
+            arr.forEach(function display(_, index) {
+                document.getElementById("demo").innerHTML += `index ${index}: value is ignored<br>`;
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <form>
+        <button type="button" onClick="generateTable()">Generate Table</button>
+        <p id="table"></p>
+    </form>
+    <script>
+        // My method:
+        // function generateTable() {
+        //     let num = parseInt(prompt("Enter a number: ", "2"));
+        //     table = ""
+        //     for (var i = 1; i <= 10; i++) {
+        //         table = table + `${num} x ${i} = ${num * i} <br>`
+        //     }
+        //     document.getElementById("table").innerHTML = table;
+        // }
+
+        function generateTable() {
+            let num = parseInt(prompt("Enter a number: ", "2"));
+            document.getElementById("table").innerHTML = "";
+            for (let i = 1; i <= 10; i++) {
+                document.getElementById("table").innerHTML += `${num} x ${i} = ${num * i} <br>`;
+            }
+        }
+    </script>
+</body>
+
+</html>

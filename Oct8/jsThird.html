@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo">Information</p>
+    <button type="button" id="show" onclick="showResult()">SHOW RESULT</button>
+    <script>
+        // alert, confirm, prompt
+        function showResult() {
+            let num1 = prompt("Enter number 1: ", "0");
+            let num2 = prompt("Enter number 2: ", "0");
+
+            let check = confirm("Do you want sum of two numbers?");
+
+            if (check === true) {
+                let sum = parseInt(num1) + parseInt(num2);
+                document.getElementById("demo").innerHTML = "Sum of the numbers: " + sum;
+            } else {
+                document.getElementById("demo").innerHTML = "You said No!";
+            }
+        }
+    </script>
+</body>
+
+</html>

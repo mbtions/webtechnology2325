@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+</head>
+
+<body>
+    <p id="header">Header 1</p>
+    <button type="button" onclick="openWindow()">Open Google in new window</button>
+    <button type="button" onclick="closeWindow()">Close the new window</button>
+    <br>
+    <br>
+    <button type="button" onclick="changeLocation()">Location href</button>
+    <script>
+        function openWindow() {
+            window.open("https://www.google.com", "_blank", "width=500, height=500");
+        }
+        function closeWindow() {
+            window.close();
+        }
+        function changeLocation() {
+            alert(window.location.href);
+            alert(window.location.protocol);
+            alert(window.location.hostname);
+            alert(window.location.pathname);
+
+            // window.location.assign()
+
+            location.href = "https://www.google.com";
+            document.getElementById("header").innerHTML = `${window.location.href}`;
+        }
+    </script>
+</body>
+
+</html>
