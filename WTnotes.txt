@@ -1,0 +1,507 @@
+Servlet and JSP are interchangeable
+Servlet is Pure java program
+JSP is an html file 
+asp.net => html ke code mei c sharp wala code likhte hain
+server side web page => jsp
+server side web application => servlet
+
+
+lifecycle adds up two phases -
+-> translation to servlet 
+-> compilation of servlet
+
+
+JSP
+
+Scriptlet tag
+expression tag
+declaration tag
+
+Scriptlet => doGet() mei code chala jaaye
+
+JSP => server => o/p
+
+<% %>
+
+out.print("")
+PrintWriter(JspWriter) ka object => out
+
+<%= %> expression
+
+
+Life Cycle
+servlet vs JSP
+scripting elements in JSP
+request dispatcher, forward
+forward vs send data
+session management => and how
+url redirecting
+cookies
+httpsession
+
+PACKED:
+- life cycle
+- forward-send 
+- cookies and session
+- servlet / JSP
+
+Session management w/ reference to JSP and Servlet
+
+Diagrams
+
+> npx @react-native-community/cli init ProjectName --version=0.74.5
+
+> npx react-native doctor, press 'f' to fix all problems
+
+> at your project, cd android and ./gradlew clean assembleDebug
+
+> npm start and press a for android 
+
+
+Why is the Spring Framework is called so?
+
+=> It is preferred to avoid any dependency in your class => Inheritance not preferred.
+
+=> Write your code that do not have dependency
+loosely coupled => no direct inheritance (use inheritance by using interface)
+
+=> Use dependency injection such as constructor injection
+
+Why Spring?
+2003 by Rod Johnson
+Spring is called so because it is a framework of frameworks. MVC, MMVC, Maven, Struts, JSF, 
+=> MVC spring boot framework.
+
+=> modular framework
+open source 
+light weight
+complete
+
+Why popular? 
+Simplicity
+Testability
+Loose Coupling
+
+No company wants to be fully dependent on  single company to avoid monopoly
+therefore there is a concept of react and nodejs.
+
+Spring used for enterprise applications that require large data
+
+ORM: Object Relational Model (Most important) 
+it has transactional queries.
+3 to 30 days can take when there is any fault or error in the transaction.
+
+Spring has 20 modules -
+core container
+data access/integration
+web
+AOP
+Instrumentation
+Test
+
+
+Core container has 4 modules-
+1. Core
+2. Beans
+3. Context 
+4. SpEL
+
+Enterprise Java Beans is nowadays Beans
+
+Beans in Java is the outcome of the encapsulation.
+Context
+
+Config vs Context in Servlet 
+=> config initially configures the servlet
+=> context sets for the number of times the servlet
+
+
+
+Data Access modules-
+- JDBC
+- ORM (transactional based)
+- Transaction (operations are query to query)
+- JMS (java messaging service)
+- OXM (if your data is XML based then we use XML based transactions; It is unsecure; non-encryption data can be used)
+
+
+Web has 4 modules-
+1. Web
+2. Web MVC
+3. Web Portlet (new architecture, framework, environment can be created of type MVC, or without MVC as well)
+4. Web Socket
+
+Miscellaneous 
+- AOP
+- Instrumenting
+- Test 
+- Messaging 
+- Aspects
+
+
+AOP-
+Code that you cannot modify
+- due to new things come to you every month, so coding and logical needs to be separated, or
+- you don't have right to modify
+- 
+
+You can create a cut-point and inject your code in that cut-point. it has several benefits -
+- no modification in code
+- no merging
+- separate codes
+- both logical and coding modules are independent
+
+IoC (Inversion of Control)
+Dependency Injection- what, types, how applied
+AOP
+MVC- REST APIs
+
+IoC
+inversion of control is an env in spring boot that makes spring boot capable to say, " We will call you, you don't call us"
+
+app executes it self and object after getting initialized will call you
+we tell the objects to be send to the memory
+
+enterprise application must be => 
+running 24/7;
+object of customers must be there;
+
+
+Multithreading makes spring boot irreplaceable
+
+Microservices development is the most in-demand
+Google's Go Lang
+Spring is a bit tough but most reliable.
+
+-> Docker for microservices 
+containerization
+different apps version on same system
+small apps work together is called microservices
+
+app --divided into--> modules 
+catering query that is related
+sub, div, mult, add are all different services that are capable to cater 4 users simultaneously.
+
+
+Coupling
+
+To implement IoC
+
+> Creating the object
+> writing them together 
+> configuring them
+> Managing their Complete life cycle
+
+STS app by IBM
+
+SWITCHING THE WORKSPACE
+> open file > switch workspace > other > browse > create folder > path select
+
+What is IoC and its types (10 marks)
+IoC : is a concept or a context env in spring framework that provide you live object instance anytime whenever you require
+Types of IoC Container:
+- BeanFactory: (Create objects when requested) [DEPRECATED]
+- ApplicationContext: (Create objects automatically)
+
+Conditions to create an object:
+- do not use new keyword
+- loosely coupled (no direct inheritance)
+- polymorphism upcasting for inheritance
+
+apply dependency injection to use objects
+
+- maven for repository management
+
+> Configuration file to tell the objects from where to get.
+
+LIFE CYCLE of Beans Object
+- Instantiate
+- Populate properties
+- Call BeanNameAware's setBeanName()
+- Call BeanFactoryAware's setBeanFactory()
+- Call ApplicationContextAware's setApplicationContext()
+- Preinitialize(BeanPostProcessor)
+- Call initializingBean's afterPropertiesSet()
+- Call custom-init()
+- Post Initialization(BeanPostProcessor)
+  [Bean Ready to Use]
+------------------------------
+  [Container is ShutDown]
+- Call DisposalBean's destroy()
+- Call custom-destroy()
+
+
+New > maven Project > [No change] > Next > either all catalog or Internal > select QuickStart 1.1 > uncheck include snapshot archtypes > 
+Group id = edu.kiet 
+Artifact ID(should be unique) = mcasecb
+ > Finish
+
+
+AppTest.java for unit Testing => course on it.
+maven dependencies > all dependencies inside it.
+.m2 => repo for maven
+
+pom.xml file => center point or hub same as that of manifest file in android.
+
+right click on package edu.kiet.mcasecb > class > Car.java
+
+public class Car {
+  public void info() {
+    System.out.println("This is car class info function");
+  }
+}
+
+Car c = new Car()
+c.info();
+
+
+
+Interface (Vehicle)
+public interface Vehicle {
+  public void info();
+}
+
+=> new keyword se runtime pr object banta hai
+=> load hote hee banna chahie
+=> object inject hona chahie
+
+object is a dependency
+
+mvn repo > search spring context > select 5.2.25 > copy maven code > paste in pom.xml
+
+
+*Aspect Oriented Programming*
+
+--> Providing modularity w/ aspect rather than class.
+--> AOP breaks the program logic into distinct parts called concerns.
+--> Increases modularity by cross-cutting concerns.
+--> A cross-cutting concern is a concern which can affect the entire application.
+
+not on class but on cause.
+
+what is AOP, terminologies in it?
+w/ example
+
+Why AOP?
+it provides a pluggable way to dynamically add the additional concern before after and around the actual logic.
+
+Core concepts of AOP:
+1. Advice: method that tells when to execute
+2. Pointcut: Where will this advice run, before, after func call or after getting error
+3. Target Object: 
+4. Aspect: What to implement
+5. Proxy: means behalf => AOP works on behalf of some module etc.
+6. Weaving: Different modules get connected together via AOP.
+7. Join Point: Where you want to get the execution.
+
+
+Bean Scopes:
+--> When the spring framework creates a bean, it associates a scope with the bean. A scope defines the runtime context within which the bean instance is available.
+--> In spring, a bean can be associated with the following scopes:
+    => Singleton;
+    => Prototype;
+    => Request;
+    => Session;
+    => WebSocket;
+    => Application.
+
+@Scope("singleton")
+
+by default => scope is singleton => example in case of aadhar card, pan card
+
+Singleton
+it is default one.
+single bean object instance per spring IoC container.
+
+Prototype 
+Opposite to singleton, it produces a new instance each and every time a bean is requested.
+=> example, number of products => number of instances 
+
+Request 
+A single instance will be created and available during complete lifecycle of an HTTP request.
+-> only works in browser
+-> can be used as a model on web and not be used outside the web.
+-> only valid in web-aware Spring ApplicationContext.
+
+Session
+A single instance will be created and available during complete lifecycle of an HTTP session.
+-> only valid in web-aware Spring ApplicationContext.
+@Scope("session") 
+@SessionScope
+
+Application 
+A single instance will be created and available during complete lifecycle of ServletContext.
+-> only valid in web-aware Spring ApplicationContext.
+@Scope("application")
+@ApplicationScope
+
+WebSocket
+A single instance will be created and available during complete lifecycle of WebSocket.
+-> only valid in web-aware Spring ApplicationContext.
+@Scope("websocket")
+
+
+
+*Design Pattern in Java*
+10 Marks
+What is design pattern?
+=> A design pattern is a well-proved solution for solving the specific problem/task.
+Sureity but no guarantee
+
+*Advantage of Design Pattern*
+- reusable in multiple projects
+- provide the solutions that help to define the system architecture.
+- capture the s/w engineering experiences.
+- provide transparency to the design of an application
+- well proved, testified solutions since they have been bult upon the knowledge and experience of expert s/w developers
+- design pattern do not guarantee an absolute solution to a problem. They provide clarity to the system architect and possibility of
+
+
+categories of Design pattern:
+- Creational
+	factory, abstract factory, prototype, singleton
+- Structural
+	adapter(MVVM), bridge, composite, decorator, facade, flyweight, proxy
+- Behavioral
+	Command, iterator, interpreter, mediator, memento, observer, state, strategy, template,
+
+
+
+Factory design pattern
+we define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate.
+in other words, subclasses are responsible to create the instance of the class.
+factory method pattern is also known as Virtual constructor
+Advantage => allows subclasses to choose the type of the object to be instantiated.
+=> loosely coupled is implemented 
+=> runtime polymorphism is implemented (upcasting).
+
+import java.io.*;
+abstract class Plan {
+	protected double rate;
+	abstract void getRate();
+
+	public void calculateBill(int units){
+	 System.out.println(units*rate);
+	}
+}
+
+
+Strategy Design Pattern
+it says that "define a family of functionality, encapsulate each one, and make them interchangeable".
+Also known as Policy.
+=> benefits:
+--> provides a substitute to sub classing.
+
+
+Implementation of Strategy Design Pattern -
+create an interface
+
+In factory method example we cannot use interface since there is a rate variable to be passed to every variable.
+=> not interchangeable
+
+Interface is best to chose. Because interface gives full abstraction (100% abstraction).JSON
+Objective is to achieve maximum abstraction.
+
+
+
+UNIT 5: ** SPRING BOOT **
+=> 2 ways to create a spring boot application
+1. spring initializer
+2. 
+
+WHAT, WHY, HOW?
+
+define runner, logger, initializer.
+
+Jakarta => a company that gives license to all the open source technologies.
+Manchester Institute of Technologies => contributed for network-based protocols.
+
+RestController => create API inside.
+it gives JSON
+
+RMI remote method 
+kORMa
+SOAP
+REST
+
+Key-value pair
+
+Creating a REST API using spring boot
+
+GSON -> Java to JSON
+POJO -> POJO classes
+json to pojo and pojo to json
+
+
+Controller to read write all the requests
+MVC Architecture => 
+create controller => HomeController.java
+Normal vs Rest controller
+
+Requests in JSON format => JSON requirements are fulfilled by RestController
+@GetMapping("/") => "/" is the root
+
+	@GetMapping("/")
+	public String index() {
+		return "Welcome to Spring Boot";
+	}
+
+It converts the string to JSON.
+
+{
+"sid": 1,
+"name": "xyz",
+"course": "mca"
+}
+// Object
+
+[
+{
+"sid": 1,
+"name": "xyz",
+"course": "mca"
+}, 
+{
+"sid": 1,
+"name": "xyz",
+"course": "mca"
+},
+{
+"sid": 1,
+"name": "xyz",
+"course": "mca"
+}
+
+]
+// Array of Objects
+	
+using Encapsulation the class data is 
+
+In Rest API, Service is used.
+
+Autowired => used w/ superclass, which automatically finds sub class and creates object along with up casting.
+
+
+
+XAMPP control panel
+
+In c:/xampp/MySQL/bin :
+
+MySQL -u root
+show databases;
+create database studentinfo;
+use studentinfo;
+show tables;
+
+
+MySQL driver
+spring data JPA
+
+spring.jpa.hibernate.dll-auto=update
+spring.jpa.show-sql=true
+
+spring.jpa.properties.hibernate.dialect=
+
+ctrl+shft+T => Type mysql57 [dialect]
+
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
